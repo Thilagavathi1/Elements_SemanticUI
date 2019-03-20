@@ -1,0 +1,472 @@
+<!DOCTYPE html>
+<html>
+<title> semantic</title>
+<header>
+
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/semantic-ui@2.4.2/dist/semantic.min.css">
+<script src="https://cdn.jsdelivr.net/npm/semantic-ui@2.4.2/dist/semantic.min.js"></script>
+
+<link rel="stylesheet" type="text/css" href="semantic/dist/semantic.min.css">
+<script
+  src="https://code.jquery.com/jquery-3.1.1.min.js"
+  integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8="
+  crossorigin="anonymous"></script>
+<script src="semantic/dist/semantic.min.js"></script>
+</header>
+<body>
+<!-- Normal button -->
+<button class="ui button">
+ Normal Button
+</button><br><br><br>
+
+<!-- focusable button -->
+<button class="ui button">
+  Button
+</button>
+<div class="ui button" tabindex="0">
+  Focusable Button
+</div> <br><br><br>
+
+<!-- color theming for primary buttons -->
+<button class="ui primary button">
+  Save
+</button>
+<button class="ui button">
+  Cancel
+</button><br><br><br>
+<!-- color theming for secondary buttons -->
+<button class="ui secondary button">
+  Ok
+</button>
+<button class="ui button">
+  Cancel
+</button><br><br><br>
+
+<!-- Annimated Button -->
+<div class="ui animated button" tabindex="0">
+  <div class="visible content">Submit</div>
+  <div class="hidden content">
+    <i class="right arrow icon"></i>
+  </div>
+</div>
+<div class="ui vertical animated button" tabindex="0">
+  <div class="hidden content">user</div>
+  <div class="visible content">
+    <i class="user icon"></i>
+  </div>
+</div>
+<div class="ui animated fade button" tabindex="0">
+  <div class="visible content">SignUp</div>
+  <div class="hidden content">
+   Login
+  </div>
+</div><br><br><br>
+
+
+<!-- label and button -->
+
+
+<div class="ui labeled button" tabindex="0">
+  <div class="ui button">
+    <i class="user icon"></i> Like
+  </div>
+  <a class="ui basic label">
+    123
+  </a>
+</div>
+<div class="ui left labeled button" tabindex="0">
+  <a class="ui basic right pointing label">
+   456
+  </a>
+  <div class="ui button">
+    <i class="user icon"></i> Like
+  </div>
+</div>
+<div class="ui left labeled button" tabindex="0">
+  <a class="ui basic label">
+    1,048
+  </a>
+  <div class="ui icon button">
+    <i class="fork icon"></i>
+  </div>
+</div> <br><br><br>
+
+
+
+<!-- color them with label and button -->
+<div class="ui labeled button" tabindex="0">
+  <div class="ui red button">
+    <i class="heart icon"></i> Like
+  </div>
+  <a class="ui basic red left pointing label">
+    1,048
+  </a>
+</div>
+<div class="ui labeled button" tabindex="0">
+  <div class="ui basic blue button">
+    <i class="fork icon"></i> Forks
+  </div>
+  <a class="ui basic left pointing blue label">
+    1,048
+  </a>
+</div><br><br><br>
+
+<!-- icons  -->
+
+<button class="ui icon red button">
+  <i class="cloud icon"></i>
+</button><br><br><br>
+
+<!-- labeled icon -->
+
+<button class="ui labeled icon button">
+  <i class="play icon"></i>
+  play
+</button>
+<button class="ui right labeled icon button">
+  <i class="left arrow icon"></i>
+Previous
+</button><br><br><br>
+
+<!-- basic button -->
+
+<button class="ui basic button">
+  <i class="icon user"></i>
+  Add User
+</button><br><br><br>
+
+<button class="ui primary basic button">Primary</button>
+<button class="ui secondary basic button">Secondary</button>
+<button class="ui positive  button">Positive</button>
+<button class="ui negative basic button">Negative</button><br><br><br>
+
+<!-- inverted buton -->
+<div class="ui inverted segment">
+  <button class="ui inverted button">Standard</button>
+  <button class="ui inverted primary button">Primary</button>
+  <button class="ui inverted secondary button">Secondary</button>
+  <button class="ui inverted red button">Red</button>
+  <button class="ui inverted orange button">Orange</button>
+  </div>
+<br><br><br>
+<div class="ui inverted segment">
+  <button class="ui inverted basic button">Basic</button>
+  <button class="ui inverted primary basic button">Primary</button>
+  <button class="ui inverted secondary basic button">Secondary</button>
+  <button class="ui inverted red basic button">Basic Red</button>
+  <button class="ui inverted orange basic button">Basic Orange</button>
+  </div>
+  <br><br><br>
+
+  <!-- group button -->
+  <div class="ui buttons">
+  <button class="ui button">One</button>
+  <button class="ui button">Two</button>
+  <button class="ui button">Three</button>
+</div>
+<br><br><br>
+
+<!-- groups of icons -->
+<div class="ui icon buttons">
+  <button class="ui button"><i class="align left icon"></i></button>
+  <button class="ui button"><i class="align center icon"></i></button>
+  <button class="ui button"><i class="align right icon"></i></button>
+  <button class="ui button"><i class="align justify icon"></i></button>
+</div>
+<br><br><br>
+
+<!-- cancel or save  format-->
+<div class="ui buttons">
+  <button class="ui button">Cancel</button>
+  <div class="or"></div>
+  <button class="ui orange button active">Save</button>
+</div>
+<br><br><br>
+
+<!-- cancelor save formet with data at the middle -->
+<div class="ui buttons">
+  <button class="ui primary button">save</button>
+  <div class="or" data-text="orr"></div>
+  <button class="ui  button">delete</button>
+</div>
+<br><br><br>
+
+
+<!-- setting the button  always as active -->
+<button class="ui active button">
+  <i class="user icon"></i>
+  Login 
+</button>
+<br><br><br>
+
+<!-- setting the button as al;ways inactive -->
+<button class="ui disabled button">
+  <i class="user icon"></i>
+  Logged in   
+</button>
+<br><br><br>
+
+<!-- loading indicator -->
+<button class="ui loading button">Loading</button>
+<button class="ui basic loading button">Loading</button>
+<button class="ui primary loading button">Loading</button>
+<br><br><br>
+
+<!-- social button -->
+<button class="ui facebook button">
+  <i class="facebook icon"></i>
+  Facebook
+</button> 
+<button class="ui instagram button">
+  <i class="instagram icon"></i>
+  Instagram
+</button>
+<button class="ui youtube button">
+  <i class="youtube icon"></i>
+  YouTube
+</button>
+<br><br><br>
+
+<!-- button size -->
+
+<button class="mini ui button">
+  Mini
+</button>
+<button class="medium ui button">
+  Medium
+</button>
+<button class="massive ui button">
+Large
+</button>
+<br><br><br>
+
+<!-- left and right float button -->
+<button class="ui right floated red button">Right </button>
+<button class="ui left floated red button">Left </button>
+<br><br><br>
+
+<!-- colored button -->
+<button class="ui purple button">Purple</button>
+<button class="ui pink button">Pink</button>
+<button class="ui brown button">Brown</button>
+<br><br><br>
+
+<!-- fit into the right space by the button -->
+
+<button class="compact ui button">
+  Hold
+</button>
+<button class="ui compact icon button">
+  <i class="play icon"></i>
+</button>
+<button class="ui compact labeled icon button">
+  <i class="play icon"></i>
+  Play
+</button>
+<br><br><br>
+<!-- ///////////////////////////////////////doubt /////////////////////////////////////////////// -->
+
+<!-- toggle button -->
+<button class="ui toggle button">Vote</button>
+<br><br><br>
+<!--  ////////////////////////////////////////doubt ////////////////////////////////////// -->
+
+<!-- positive button -->
+<button class="positive ui button">Positive Button</button>
+<br><br><br>
+
+<!-- Negative button -->
+<button class="negative ui button">Negative Button</button>
+<br><br><br>
+
+<!-- full width fluid container -->
+<button class="fluid ui button">Full width container</button>
+<br><br><br>
+
+<!-- circular button  -->
+<button class="circular ui icon button">
+  <i class="icon settings"></i>
+</button>
+<br><br><br>
+
+<!-- circular button in social media icons -->
+<button class="ui circular facebook icon button">
+  <i class="facebook icon"></i>
+</button>
+<button class="ui circular linkedin icon button">
+  <i class="linkedin icon"></i>
+</button>
+<br><br><br>
+
+<!-- top and bottom button -->
+<div class="ui top attached button" tabindex="0">Top</div>
+<div class="ui attached segment">
+  <p>hiiiiii hiiiii hiiiiiiii hiiiiiii hiiiiiii example sample hiiiiii </p>
+</div>
+<div class="ui bottom attached button" tabindex="0">Bottom</div>
+<br><br><br>
+
+<!-- top and bottom button having two equal half button inside  -->
+<div class="ui two top attached buttons">
+    <div class="ui black button">One</div>
+    <div class="ui red button">Two</div>
+</div>
+<div class="ui attached segment">
+  <p>example example example example </p>
+</div>
+<div class="ui two bottom attached buttons">
+    <div class="ui red button">One</div>
+    <div class="ui black button">Two</div>
+</div>
+<br><br><br>
+
+<!-- left nad right attached button -->
+<button class="ui left attached button">Left</button>
+<button class="right attached ui button">Right</button>
+<br><br><br>
+
+<!-- Group variations -->
+<div class="ui vertical buttons">
+  <button class="ui button">1</button>
+  <button class="ui button">2</button>
+  <button class="ui button">3</button>
+  <button class="ui button">4</button>
+</div>
+<br><br><br>
+
+<!-- groups with icons -->
+<div class="ui icon buttons">
+  <button class="ui button">
+    <i class="play icon"></i>
+  </button>
+  <button class="ui button">
+    <i class="pause icon"></i>
+  </button>
+  <button class="ui button">
+    <i class="user icon"></i>
+  </button>
+</div>
+<br><br><br>
+
+
+<!-- group with labelled icons  -->
+<div class="ui vertical labeled icon buttons">
+  <button class="ui button">
+    <i class="pause icon"></i>
+    Pause
+  </button>
+  <button class="ui button">
+    <i class="play icon"></i>
+    Play
+  </button>
+  <button class="ui button">
+    <i class="user icon"></i>
+    User
+  </button>
+</div>
+<br><br><br>
+
+<!-- mixed group icons -->
+<div class="ui buttons">
+  <button class="ui labeled icon button">
+    <i class="left chevron icon"></i>
+    Back
+  </button>
+  <button class="ui button">
+    <i class="stop icon"></i>
+    Stop
+  </button>
+  <button class="ui right labeled icon button">
+    Forward
+    <i class="right chevron icon"></i>
+  </button>
+</div>
+<br><br><br>
+
+<!-- equal width group icons -->
+<div class="five ui buttons " style="border:2px solid black;">
+  <button class="ui button">aaa</button>
+  <button class="ui button">bbb</button>
+  <button class="ui button">ccc</button>
+  <button class="ui button">ddd</button>
+  <button class="ui button">eee</button>
+</div>
+<div class="three ui buttons">
+  <button class="ui button">aa</button>
+  <button class="ui button">bb</button>
+  <button class="ui button">ccc</button>
+</div>
+<br><br><br>
+
+<!-- groups with colored button -->
+<div class="blue ui buttons">
+  <button class="ui button">1</button>
+  <button class="ui button">2</button>
+  <button class="ui button">3</button>
+</div>
+<br><br><br>
+
+<!-- basic group button -->
+<div class="ui basic buttons">
+  <div class="ui button">1</div>
+  <div class="ui button">2</div>
+  <div class="ui button">3</div>
+</div>
+<div class="ui divider"></div>
+<div class="ui vertical basic buttons">
+  <button class="ui button">1</button>
+  <button class="ui button">2</button>
+  <button class="ui button">3</button>
+</div>
+<br><br><br>
+
+<!-- basic group button with color -->
+<div class="ui buttons">
+  <button class="ui red basic button">1</button>
+  <button class="ui blue basic button">2</button>
+  <button class="ui green basic button">3</button>
+</div>
+<br><br><br>
+
+<!-- group sizes -->
+<div class="large ui buttons">
+  <button class="ui button">1</button>
+  <button class="ui button">2</button>
+  <button class="ui button">3</button>
+</div>
+<br><br><br>
+
+<!-- group sizes icons-->
+<div class="ui small basic icon buttons">
+  <button class="ui button"><i class="file icon"></i></button>
+  <button class="ui button"><i class="save icon"></i></button>
+  <button class="ui button"><i class="upload icon"></i></button>
+  <button class="ui button"><i class="download icon"></i></button>
+</div>
+<br><br><br>
+
+<!-- One or two -->
+<div class="ui large buttons">
+  <button class="ui button">One</button>
+  <div class="or"></div>
+  <button class="ui button">Two</button>
+</div>
+<br><br><br>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</body>
+</html>
